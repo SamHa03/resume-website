@@ -167,6 +167,17 @@ section {
     color: #ffffff;
 }
 
+.education-entry degree-info {
+    color: #b6d5ef;
+    font-weight: bold;
+    font-size: 1.1rem;
+    margin: 0.5rem 0 1rem 0;
+    padding: 0.5rem 0 0.5rem 0;
+    background-color: #2d3748;
+    border-radius: 4px;
+    display: inline-block;
+}
+
 .relevant-courses ul {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
@@ -222,7 +233,7 @@ section {
 .work-entry h3, .leadership-entry h3, .education-entry h3 {
     font-size: 1.5rem;
     color: #4299e1;
-    margin-bottom: 0.5rem;
+    margin-bottom: 0;
 }
 
 .organization-info {
