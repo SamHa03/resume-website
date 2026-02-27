@@ -143,7 +143,6 @@ section {
     text-decoration: underline;
 }
 
-/* Responsive Design */
 @media (max-width: 768px) {
     .home-content {
         flex-direction: column;
