@@ -1,0 +1,24 @@
+{
+  "name": "Samuel Harris",
+  "nav": [
+    {
+      "label": "Home",
+      "href": "home.html"
+    },
+    {
+      "label": "Resume",
+      "href": "resume.html"
+    },
+    {
+      "label": "Portfolio",
+      "href": "portfolio.html"
+    },
+    {
+      "label": "Contact",
+      "href": "contact.html"
+    }
+  ],
+  "accessibility": {
+    "skipLinkText": "Skip to content"
+  }
+}

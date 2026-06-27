@@ -12,31 +12,24 @@
     <meta name="apple-mobile-web-app-status-bar-style" content="default">
     <meta name="apple-mobile-web-app-title" content="Samuel Harris">
     <link rel="apple-touch-icon" href="../assets/icons/Initials.ico">
-    <script src="/js/main.js" defer></script>
+    <script defer src="../js/config.js?v=20260627-2"></script>
+    <script defer src="../js/dom.js?v=20260627-2"></script>
+    <script defer src="../js/data.js?v=20260627-2"></script>
+    <script defer src="../js/navigation.js?v=20260627-2"></script>
+    <script defer src="../js/pages/home.js?v=20260627-2"></script>
+    <script defer src="../js/pages/resume.js?v=20260627-2"></script>
+    <script defer src="../js/pages/portfolio.js?v=20260627-2"></script>
+    <script defer src="../js/pages/contact.js?v=20260627-2"></script>
+    <script defer src="../js/router.js?v=20260627-2"></script>
+    <script defer src="../js/main.js?v=20260627-2"></script>
 </head>
-<body>
-    <nav>
-        <div class="container">
-            <a href="home.html" class="logo">Samuel Harris</a>
-            <ul>
-                <li><a href="home.html">Home</a></li>
-                <li><a href="resume.html">Resume</a></li>
-                <li><a href="portfolio.html">Portfolio</a></li>
-                <li><a href="contact.html">Contact</a></li>
-            </ul>
-        </div>
-    </nav>
+<body data-page="contact">
+    <a class="skip-link" href="#page-content">Skip to content</a>
+    <nav id="site-nav" aria-label="Primary navigation"></nav>
 
-    <main class="container">
-        <h1>Contact Me</h1>
-        <div class="contact-info">
-            <p><strong>Email:</strong> samcharris03@gmail.com</p>
-            <p><strong>Phone:</strong> (931) 384-8812</p>
-            <p>
-                <strong>GitHub:</strong>
-                <a href="https://github.com/SamHa03" target="_blank" rel="noopener noreferrer">Check out my GitHub profile</a>
-            </p>
-        </div>
+    <main class="container" id="page-content" tabindex="-1">
+        <noscript>This website needs JavaScript enabled to load page content from JSON.</noscript>
+        <p class="loading">Loading content...</p>
     </main>
 </body>
 </html>

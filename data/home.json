@@ -1,0 +1,14 @@
+{
+  "title": "Welcome to My Professional Portfolio",
+  "image": {
+    "src": "../assets/images/Headshot.JPG",
+    "alt": "Samuel Harris"
+  },
+  "about": {
+    "heading": "About Me",
+    "paragraphs": [
+      "Hello! I'm Samuel Harris, a software developer currently working for Northrop Grumman. My career focus is data science and my primary coding experience is with Python, C#, and C++. I am pursuing my Masters in Computer Science from the University of Tennessee, Knoxville. In 2025, I graduated from the University of Alabama in Huntsville with a bachelors in Computer Science."
+    ]
+  },
+  "lastUpdated": "2026-06-26"
+}

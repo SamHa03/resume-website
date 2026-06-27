@@ -12,36 +12,24 @@
     <meta name="apple-mobile-web-app-status-bar-style" content="default">
     <meta name="apple-mobile-web-app-title" content="Samuel Harris">
     <link rel="apple-touch-icon" href="../assets/icons/Initials.ico">
-    <script src="/js/main.js" defer></script>
+    <script defer src="../js/config.js?v=20260627-2"></script>
+    <script defer src="../js/dom.js?v=20260627-2"></script>
+    <script defer src="../js/data.js?v=20260627-2"></script>
+    <script defer src="../js/navigation.js?v=20260627-2"></script>
+    <script defer src="../js/pages/home.js?v=20260627-2"></script>
+    <script defer src="../js/pages/resume.js?v=20260627-2"></script>
+    <script defer src="../js/pages/portfolio.js?v=20260627-2"></script>
+    <script defer src="../js/pages/contact.js?v=20260627-2"></script>
+    <script defer src="../js/router.js?v=20260627-2"></script>
+    <script defer src="../js/main.js?v=20260627-2"></script>
 </head>
-<body>
-    <nav>
-        <div class="container">
-            <a href="home.html" class="logo">Samuel Harris</a>
-            <ul>
-                <li><a href="home.html">Home</a></li>
-                <li><a href="resume.html">Resume</a></li>
-                <li><a href="portfolio.html">Portfolio</a></li>
-                <li><a href="contact.html">Contact</a></li>
-            </ul>
-        </div>
-    </nav>
+<body data-page="portfolio">
+    <a class="skip-link" href="#page-content">Skip to content</a>
+    <nav id="site-nav" aria-label="Primary navigation"></nav>
 
-    <main class="container">
-        <h1>Portfolio</h1>
-        <div class="portfolio-grid">
-            <div class="portfolio-item">
-                <h3>MindMate</h3>
-                <p>MindMate is a mobile app geared towards helping college students stay on top of their mental health. It does this with mood tracking, task management, breathing exercises, and focus timers. It is built in a React-Native environemnt.</p>
-                <a href="https://github.com/SamHa03/CS499MindMate" class="github-link" target="_blank" rel="noopener noreferrer">View on GitHub</a>
-            </div>
-            <div class="portfolio-item">
-                <h3>Resume Website</h3>
-                <p>This is a website I created to display my resume and portfolio. It is built in a HTML and CSS environment. (You're on this website right now!)</p>
-                <a href="https://github.com/SamHa03/resume-website" class="github-link" target="_blank" rel="noopener noreferrer">View on GitHub</a>
-            </div>
-            <!-- Add more portfolio items as needed -->
-        </div>
+    <main class="container" id="page-content" tabindex="-1">
+        <noscript>This website needs JavaScript enabled to load page content from JSON.</noscript>
+        <p class="loading">Loading content...</p>
     </main>
 </body>
 </html>

@@ -6,13 +6,38 @@ body {
     background-color: #1a202c;
     margin: 0;
     padding: 0;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
 }
 
 .container {
     width: 80%;
-    margin: auto;
+    margin: 0 auto;
     overflow: hidden;
     padding: 0 20px;
+}
+
+.skip-link {
+    position: absolute;
+    left: -999px;
+    top: 0;
+    z-index: 1000;
+    background-color: #ffffff;
+    color: #1a202c;
+    padding: 0.75rem 1rem;
+    border-radius: 0 0 4px 0;
+}
+
+.skip-link:focus {
+    left: 0;
+}
+
+a:focus-visible,
+button:focus-visible,
+[tabindex]:focus-visible {
+    outline: 3px solid #ffffff;
+    outline-offset: 3px;
 }
 
 /* Navigation */
@@ -30,7 +55,10 @@ nav .container {
 
 nav ul {
     display: flex;
+    flex-wrap: wrap;
     list-style: none;
+    margin: 0;
+    padding: 0;
 }
 
 nav ul li {
@@ -40,6 +68,12 @@ nav ul li {
 nav a {
     color: #ffffff;
     text-decoration: none;
+}
+
+nav a[aria-current="page"] {
+    color: #b6d5ef;
+    border-bottom: 2px solid #4299e1;
+    padding-bottom: 0.2rem;
 }
 
 .logo {
@@ -52,6 +86,12 @@ main {
     padding: 2rem 0;
 }
 
+main.container {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+}
+
 h1 {
     font-size: 2.5rem;
     margin-bottom: 1rem;
@@ -62,18 +102,18 @@ h2 {
     margin-bottom: 0.5rem;
 }
 
-/* Home Page */
 .container h1 {
     text-align: center;
     margin-bottom: 2rem;
 }
 
+/* Home Page */
 .home-content {
     display: flex;
     align-items: flex-start;
     gap: 2rem;
     max-width: 1000px;
-    margin: auto;
+    margin: 0 auto;
 }
 
 .profile-image {
@@ -86,7 +126,7 @@ h2 {
 
 .about-me {
     max-width: 800px;
-    margin: auto;
+    margin: 0;
 }
 
 /* Resume Page */
@@ -107,67 +147,6 @@ section {
     margin-bottom: 2rem;
 }
 
-/* Portfolio Page */
-.portfolio-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    gap: 2rem;
-}
-
-.portfolio-item {
-    background-color: #2d3748;
-    padding: 1.5rem;
-    border-radius: 5px;
-}
-
-.github-link {
-    color: #4299e1;
-    text-decoration: none;
-}
-
-.github-link:hover {
-    text-decoration: underline;
-}
-
-/* Contact Page */
-.contact-info p {
-    margin-bottom: 1rem;
-}
-
-.contact-info a {
-    color: #4299e1;
-    text-decoration: none;
-}
-
-.contact-info a:hover {
-    text-decoration: underline;
-}
-
-@media (max-width: 768px) {
-    .home-content {
-        flex-direction: column;
-    }
-
-    .profile-image {
-    order: -1;
-    width: 200px;
-    height: 200px;
-    margin: 0 auto 1rem;
-  }
-
-    nav .container {
-        flex-direction: column;
-    }
-
-    nav ul {
-        margin-top: 1rem;
-    }
-
-    .portfolio-grid {
-        grid-template-columns: 1fr;
-    }
-}
-
 .education-entry {
     margin-bottom: 2rem;
 }
@@ -177,7 +156,7 @@ section {
     color: #ffffff;
 }
 
-.education-entry degree-info {
+.degree-info {
     color: #b6d5ef;
     font-weight: bold;
     font-size: 1.1rem;
@@ -217,7 +196,6 @@ section {
     text-align: center;
 }
 
-/* Resume Section Styling */
 .resume-section {
     margin-bottom: 3rem;
     padding-bottom: 2rem;
@@ -233,17 +211,56 @@ section {
     color: #ffffff;
 }
 
-.work-entry, .leadership-entry, .education-entry {
+.company-entry,
+.leadership-entry,
+.education-entry {
     background-color: #2d3748;
     padding: 1.5rem;
     margin-bottom: 1.5rem;
     border-radius: 8px;
 }
 
-.work-entry h3, .leadership-entry h3, .education-entry h3 {
+.company-name,
+.leadership-entry h3,
+.education-entry h3 {
     font-size: 1.5rem;
     color: #4299e1;
-    margin-bottom: 0;
+    margin: 0 0 1rem 0;
+}
+
+.role-entry {
+    border-left: 3px solid #4299e1;
+    padding-left: 1rem;
+    margin-top: 1.25rem;
+}
+
+.role-entry:first-of-type {
+    margin-top: 0;
+}
+
+.role-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    gap: 1rem;
+}
+
+.role-title {
+    font-size: 1.2rem;
+    color: #ffffff;
+    margin: 0;
+}
+
+.role-date {
+    color: #a0aec0;
+    font-style: italic;
+    white-space: nowrap;
+}
+
+.role-department {
+    color: #b6d5ef;
+    font-weight: bold;
+    margin: 0.25rem 0 0.75rem 0;
 }
 
 .organization-info {
@@ -259,11 +276,155 @@ section {
     font-style: italic;
 }
 
-.work-entry ul, .leadership-entry ul {
+.role-entry ul,
+.leadership-entry ul {
     padding-left: 1.2rem;
 }
 
-.work-entry li, .leadership-entry li {
+.role-entry li,
+.leadership-entry li {
     margin-bottom: 0.5rem;
     line-height: 1.4;
+}
+
+/* Portfolio Page */
+.portfolio-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+}
+
+.portfolio-item {
+    background-color: #2d3748;
+    padding: 1.5rem;
+    border-radius: 5px;
+}
+
+.project-meta {
+    display: grid;
+    grid-template-columns: max-content 1fr;
+    gap: 0.5rem 1rem;
+    margin: 1rem 0;
+}
+
+.project-meta dt {
+    color: #a0aec0;
+    font-weight: bold;
+}
+
+.project-meta dd {
+    margin: 0;
+}
+
+.project-meta .technology-label {
+    grid-column: 1 / -1;
+    margin-top: 0.5rem;
+}
+
+.project-meta .technology-details {
+    grid-column: 1 / -1;
+}
+
+.technology-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+    gap: 0.5rem;
+    list-style: none;
+    margin: 0.25rem 0 0;
+    padding: 0;
+}
+
+.technology-list li {
+    background-color: #1a202c;
+    color: #ffffff;
+    padding: 0.5rem 1rem;
+    border-radius: 4px;
+    text-align: center;
+}
+
+.github-link {
+    color: #4299e1;
+    text-decoration: none;
+}
+
+.github-link:hover,
+.contact-info a:hover {
+    text-decoration: underline;
+}
+
+/* Contact Page */
+.contact-info p {
+    margin-bottom: 1rem;
+}
+
+.contact-info a {
+    color: #4299e1;
+    text-decoration: none;
+}
+
+/* Dynamic JSON loading states */
+.loading,
+.error-message {
+    background-color: #2d3748;
+    padding: 1rem;
+    border-radius: 5px;
+}
+
+.error-message {
+    border-left: 4px solid #e53e3e;
+}
+
+/* Page metadata footer */
+.page-footer {
+    margin-top: auto;
+    padding-top: 3rem;
+}
+
+.last-updated {
+    color: #a0aec0;
+    font-size: 0.8rem;
+    margin: 0;
+    opacity: 0.65;
+    text-align: center;
+}
+
+.not-found-page {
+    text-align: center;
+}
+
+@media (max-width: 768px) {
+    .home-content {
+        flex-direction: column;
+    }
+
+    .profile-image {
+        order: -1;
+        width: 200px;
+        height: 200px;
+        margin: 0 auto 1rem;
+    }
+
+    nav .container {
+        flex-direction: column;
+    }
+
+    nav ul {
+        justify-content: center;
+        margin-top: 1rem;
+    }
+
+    .portfolio-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .organization-info,
+    .role-header {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 0.25rem;
+    }
+
+    .role-date {
+        white-space: normal;
+    }
 }

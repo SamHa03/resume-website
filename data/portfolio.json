@@ -1,0 +1,30 @@
+{
+  "title": "Portfolio",
+  "projects": [
+    {
+      "name": "MindMate",
+      "description": "MindMate is a mobile app geared towards helping college students stay on top of their mental health. It does this with mood tracking, task management, breathing exercises, and focus timers. It is built in a React-Native environment.",
+      "github": "https://github.com/SamHa03/CS499MindMate",
+      "role": "Backend developer",
+      "status": "Completed",
+      "stack": [
+        "React Native",
+        "JavaScript",
+        "Firebase"
+      ]
+    },
+    {
+      "name": "Resume Website",
+      "description": "This is a website I created to display my resume and portfolio. It is built in a HTML and CSS environment. You're on this website right now!",
+      "github": "https://github.com/SamHa03/resume-website",
+      "role": "Frontend developer",
+      "status": "Completed with ongoing maintenance",
+      "stack": [
+        "HTML",
+        "CSS",
+        "JavaScript"
+      ]
+    }
+  ],
+  "lastUpdated": "2026-06-26"
+}

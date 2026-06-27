@@ -1,0 +1,152 @@
+{
+  "title": "Resume",
+  "download": {
+    "label": "Download PDF Resume",
+    "href": "../assets/documents/SamuelHarris_resume2025.pdf"
+  },
+  "summary": {
+    "heading": "Professional Summary",
+    "text": "Up and coming Computer Science graduate with a passion for software development and a strong work ethic. I am a quick learner and have a knack for problem-solving. I am a team player and am always willing to help out my peers."
+  },
+  "education": [
+    {
+      "degree": "Masters of Science in Computer Science",
+      "degreeInfo": "Concentration in Data Mining and Intelligent Systems",
+      "organization": "University of Tennessee, Knoxville",
+      "date": "est. May 2027",
+      "gpa": "4.0",
+      "courses": [
+        "Artificial Intelligence",
+        "Machine Learning",
+        "Deep Learning"
+      ]
+    },
+    {
+      "degree": "Bachelor of Science in Computer Science",
+      "degreeInfo": "Concentration in Data Science, Minor in Mathematics",
+      "organization": "University of Alabama in Huntsville",
+      "date": "May 2025",
+      "gpa": "3.34/4.00, Cum Laude",
+      "courses": [
+        "Data Structures",
+        "Analysis of Algorithms",
+        "Object-Oriented Programming",
+        "Big Data Computing",
+        "Survey of Artificial Intelligence",
+        "Programming Languages",
+        "Computer Architecture",
+        "Operating Systems"
+      ]
+    }
+  ],
+  "work": [
+    {
+      "company": "Northrop Grumman",
+      "roles": [
+        {
+          "title": "Associate PATHWAYS Software Engineer",
+          "department": "GWS Sustainment",
+          "date": "June 2025 - present",
+          "bullets": [
+            "..."
+          ]
+        },
+        {
+          "title": "College Intern, Technical",
+          "department": "GWS Hardware",
+          "date": "June 2024 - May 2025",
+          "bullets": [
+            "Develop an application in Visual Basic .NET to interact with the Microsoft Visio API to check Visio drawings for human errors",
+            "Develop various other Visual Basic .NET applications to assist with electrical engineering drawing and design",
+            "Participate in two-week sprints as part of a scrum team to coordinate and communicate with other members"
+          ]
+        }
+      ]
+    },
+    {
+      "company": "The University of Alabama in Huntsville",
+      "roles": [
+        {
+          "title": "Student Specialist",
+          "department": "Office of Student Life",
+          "date": "May 2024 - May 2025",
+          "bullets": [
+            "Organize and provide physical manpower during on-campus student events."
+          ]
+        },
+        {
+          "title": "Intramural Referee",
+          "department": "Intramural Sports Department",
+          "date": "August 2021 - December 2024",
+          "bullets": [
+            "Collaborate with other referee officials to maintain sporting integrity among competitors.",
+            "Organize schedules and availability of various athletic events."
+          ]
+        },
+        {
+          "title": "Student Ambassador",
+          "department": "Office of Admissions",
+          "date": "June 2022 - August 2024",
+          "bullets": [
+            "Represent the University of Alabama in Huntsville as a student ambassador.",
+            "Influence prospective students by providing tours of campus, catering to questions, and providing guidance."
+          ]
+        }
+      ]
+    }
+  ],
+  "leadership": [
+    {
+      "title": "Recruitment Committee Member, IFC Delegate",
+      "organization": "Alpha Tau Omega",
+      "date": "August 2021 - May 2025",
+      "bullets": [
+        "Raise over $150,000 annually for various causes and charities through events such as Battle of the Buffalo, Auto Emporium, and BillHallum Annual Golf Tournament",
+        "Perform over 350 hours of community service in the Huntsville area",
+        "Organize events, make meaningful connections with, and draw in potential new members as part of a committee"
+      ]
+    },
+    {
+      "title": "President, Captain",
+      "organization": "UAH Club Soccer",
+      "date": "September 2022 - May 2025",
+      "bullets": [
+        "Organize practices, matches, and maintain equipment for the university club team.",
+        "Oversee logistics such as flow of money, conversing with UAH officials, and ensuring standards are upheld."
+      ]
+    },
+    {
+      "title": "Delegate",
+      "organization": "Inter Fraternity Council",
+      "date": "Spring 2022 - Spring 2023",
+      "bullets": [
+        "Represented the Alpha Tau Omega Fraternity in a council consisting of differing chapters of fraternities' members.",
+        "Upheld a standard set of bylaws and planned social events to further create bonds and a more collaborative environment between different chapters."
+      ]
+    },
+    {
+      "title": "College of Science Representative",
+      "organization": "Student Government Association",
+      "date": "Fall 2022",
+      "bullets": [
+        "Represented the student body of the College of Science by discussing and bringing forth issues and ideas to further improve campus to the student-run government."
+      ]
+    }
+  ],
+  "skills": [
+    "C++",
+    "Java",
+    "Python",
+    "Visual Basic",
+    ".NET",
+    "C#",
+    "C",
+    "HTML",
+    "CSS",
+    "JavaScript",
+    "React Native",
+    "Git",
+    "GitHub"
+  ],
+  "lastUpdated": "2026-06-26"
+}
