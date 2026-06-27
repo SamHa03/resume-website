@@ -1,0 +1,21 @@
+/* Home page */
+.home-content {
+    display: flex;
+    align-items: flex-start;
+    gap: 2rem;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.profile-image {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    margin-bottom: 1rem;
+    object-fit: cover;
+}
+
+.about-me {
+    max-width: 800px;
+    margin: 0;
+}

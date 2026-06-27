@@ -1,0 +1,33 @@
+/* Shared components */
+.button {
+    display: inline-block;
+    background-color: #4299e1;
+    color: #ffffff;
+    padding: 0.5rem 1rem;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+.loading,
+.error-message {
+    background-color: #2d3748;
+    padding: 1rem;
+    border-radius: 5px;
+}
+
+.error-message {
+    border-left: 4px solid #e53e3e;
+}
+
+.page-footer {
+    margin-top: auto;
+    padding-top: 3rem;
+}
+
+.last-updated {
+    color: #a0aec0;
+    font-size: 0.8rem;
+    margin: 0;
+    opacity: 0.65;
+    text-align: center;
+}

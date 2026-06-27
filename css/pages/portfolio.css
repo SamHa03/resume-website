@@ -1,0 +1,63 @@
+/* Portfolio page */
+.portfolio-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+}
+
+.portfolio-item {
+    background-color: #2d3748;
+    padding: 1.5rem;
+    border-radius: 5px;
+}
+
+.project-meta {
+    display: grid;
+    grid-template-columns: max-content 1fr;
+    gap: 0.5rem 1rem;
+    margin: 1rem 0;
+}
+
+.project-meta dt {
+    color: #a0aec0;
+    font-weight: bold;
+}
+
+.project-meta dd {
+    margin: 0;
+}
+
+.project-meta .technology-label {
+    grid-column: 1 / -1;
+    margin-top: 0.5rem;
+}
+
+.project-meta .technology-details {
+    grid-column: 1 / -1;
+}
+
+.technology-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+    gap: 0.5rem;
+    list-style: none;
+    margin: 0.25rem 0 0;
+    padding: 0;
+}
+
+.technology-list li {
+    background-color: #1a202c;
+    color: #ffffff;
+    padding: 0.5rem 1rem;
+    border-radius: 4px;
+    text-align: center;
+}
+
+.github-link {
+    color: #4299e1;
+    text-decoration: none;
+}
+
+.github-link:hover {
+    text-decoration: underline;
+}

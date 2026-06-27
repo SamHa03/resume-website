@@ -1,0 +1,13 @@
+/* Contact page */
+.contact-info p {
+    margin-bottom: 1rem;
+}
+
+.contact-info a {
+    color: #4299e1;
+    text-decoration: none;
+}
+
+.contact-info a:hover {
+    text-decoration: underline;
+}
